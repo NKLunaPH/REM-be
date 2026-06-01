@@ -11,4 +11,14 @@ router.post('/users', controller.createUser)
 router.get('/transactions', controller.getTransactions)
 router.post('/transactions', controller.createTransaction)
 
+// AUTH
+router.post('/auth/login', controller.login)
+
+// PROPERTIES
+router.get('/properties', controller.getProperties)
+router.get('/properties/:id', controller.getPropertyById)
+router.post('/properties', controller.createProperty)
+router.put('/properties/:id', controller.updateProperty)
+router.delete('/properties/:id', controller.deleteProperty)
+
 export default router
